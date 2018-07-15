@@ -73,7 +73,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.activeLabel.text = paring.active
         cell.pairingIdLabel.text = paring.pairing_id
         let url = URL(string: "https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-70-512.png")
-        cell.newsImageView.kf.setImage(with: url)
+        cell.newsImageView.kf.setImage(with: url)   //**Changed from imageView.kf.setImage() to cell.newsImageView.kf.setImage()
         
         return cell
     }
